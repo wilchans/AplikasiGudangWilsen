@@ -2,8 +2,6 @@
 AplikasiGudangWilsen
 ====================
 
-Project JavaFX sederhana sesuai tugas Kuis Java Programming.
-
 - Java: 17
 - JavaFX: 17.0.2 (pom.xml)
 - Login default: admin / 123
@@ -21,5 +19,4 @@ File penting:
 - src/main/java/id/univ/wilsen/model/Barang.java
 
 Catatan:
-- Project ini fokus ke halaman Manajemen Barang (sesuai NIM ganjil).
-- Supplier/Customer hanyalah placeholder di menu.
+Supplier/Customer hanyalah placeholder di menu.

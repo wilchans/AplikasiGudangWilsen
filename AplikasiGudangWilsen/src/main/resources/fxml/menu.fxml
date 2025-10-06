@@ -1,0 +1,16 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="12" xmlns:fx="http://javafx.com/fxml" fx:controller="id.univ.wilsen.controller.MenuController">
+    <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+    <Label text="Menu Utama" style="-fx-font-size:18px; -fx-font-weight:bold;"/>
+    <HBox spacing="10">
+        <Button text="Manajemen Barang" fx:id="barangBtn" onAction="#openBarang" />
+        <Button text="Manajemen Supplier" fx:id="supplierBtn" onAction="#openSupplier" />
+        <Button text="Manajemen Customer" fx:id="customerBtn" onAction="#openCustomer" />
+    </HBox>
+    <Button text="Logout" fx:id="logoutBtn" onAction="#logout" />
+</VBox>

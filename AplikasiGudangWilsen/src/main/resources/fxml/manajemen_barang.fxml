@@ -1,0 +1,44 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="id.univ.wilsen.controller.ManajemenBarangController">
+    <top>
+        <VBox spacing="6" alignment="CENTER">
+            <Label text="Manajemen Barang" style="-fx-font-size:16px; -fx-font-weight:bold;"/>
+        </VBox>
+    </top>
+    <center>
+        <VBox spacing="8" padding="10">
+            <GridPane hgap="8" vgap="8">
+                <Label text="Nama Barang" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                <TextField fx:id="namaField" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+                <Label text="Jumlah" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                <TextField fx:id="jumlahField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+                <Button text="Tambah" fx:id="tambahBtn" onAction="#onTambah" GridPane.rowIndex="2" GridPane.columnIndex="1" HPos="RIGHT"/>
+            </GridPane>
+
+            <TableView fx:id="tabel" prefHeight="200">
+                <columns>
+                    <TableColumn fx:id="colNama" text="Nama" prefWidth="200"/>
+                    <TableColumn fx:id="colJumlah" text="Jumlah" prefWidth="100"/>
+                </columns>
+            </TableView>
+
+            <HBox spacing="8" alignment="CENTER_RIGHT">
+                <Button text="Edit" fx:id="editBtn" onAction="#onEdit"/>
+                <Button text="Hapus" fx:id="hapusBtn" onAction="#onHapus"/>
+            </HBox>
+
+            <Label fx:id="messageLabel" style="-fx-text-fill: green;"/>
+        </VBox>
+    </center>
+
+    <bottom>
+        <HBox alignment="CENTER_LEFT" padding="10">
+            <Button text="Kembali ke Menu" onAction="#logout"/>
+        </HBox>
+    </bottom>
+</BorderPane>
